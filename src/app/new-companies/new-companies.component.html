@@ -16,15 +16,21 @@
   <mat-card class="example-card small-card" *ngFor="let obj of dataSource">
     <mat-card-header>
       <mat-card-title-group>
-        <mat-card-title>{{ obj["companyName"] }}</mat-card-title>
-        <mat-card-subtitle>{{ obj["location"] }}</mat-card-subtitle>
+        <mat-card-title>{{
+          obj["companyName"] ? obj["companyName"] : ""
+        }}</mat-card-title>
+        <mat-card-subtitle>{{
+          obj["location"] ? obj["location"] : ""
+        }}</mat-card-subtitle>
         <p class="circle-trademark">{{ obj["companyTrademark"] }}</p>
       </mat-card-title-group>
       <button mat-icon-button (click)="openEditCompForm(obj)">
         <mat-icon>edit</mat-icon>
       </button>
     </mat-card-header>
-    <mat-card-content>{{ obj["phoneNumber"] }} </mat-card-content>
+    <mat-card-content
+      >{{ obj["phoneNumber"] ? obj["phoneNumber"] : "" }}
+    </mat-card-content>
     <button
       mat-raised-button
       color="primary"

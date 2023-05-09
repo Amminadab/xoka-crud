@@ -93,6 +93,61 @@
       "phoneNumber": "aa",
       "companyTrademark": "aa",
       "id": 11
+    },
+    {
+      "companyName": "Ezra M",
+      "location": "Betel",
+      "phoneNumber": "09664467",
+      "companyTrademark": "PLC",
+      "id": 12
+    }
+  ],
+  "departments": [
+    {
+      "department": "Lawyers",
+      "companyId": "",
+      "id": 1
+    },
+    {
+      "department": "programming",
+      "companyId": null,
+      "id": 2
+    },
+    {
+      "department": "Light",
+      "companyId": null,
+      "id": 3
+    },
+    {
+      "department": "axy",
+      "companyId": null,
+      "id": 4
+    }
+  ],
+  "employees": [
+    {
+      "firstName": "Amminadab",
+      "lastName": "Elias",
+      "email": "amminadabeliasfant@gmail.com",
+      "dob": "2023-05-15T21:00:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "Google",
+      "experience": 4,
+      "package": 12,
+      "id": 1
+    },
+    {
+      "firstName": "Heylu",
+      "lastName": "Belete",
+      "email": "sadgsdg@gmail.com",
+      "dob": "2023-05-10T21:00:00.000Z",
+      "gender": "",
+      "education": "Graduate",
+      "company": "Meta",
+      "experience": 4,
+      "package": 12,
+      "id": 2
     }
   ]
 }

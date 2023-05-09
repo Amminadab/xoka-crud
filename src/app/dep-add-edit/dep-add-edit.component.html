@@ -1,0 +1,22 @@
+<div mat-dialog-title>Company Form</div>
+<form [formGroup]="depForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content class="content">
+    <mat-form-field appearance="outline">
+      <mat-label>Department Name</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="Ex. Programming"
+        formControlName="department"
+      />
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">
+      Cancel
+    </button>
+    <button mat-raised-button color="primary" type="submit">
+      {{ data ? "Update" : "Add" }}
+    </button>
+  </div>
+</form>
