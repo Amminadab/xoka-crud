@@ -1,0 +1,91 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "companies": [
+    {
+      "companyName": "Avi ICT Solutions",
+      "location": "Addis Ababa",
+      "phoneNumber": "09101010101",
+      "companyTrademark": "PLC",
+      "id": 1
+    },
+    {
+      "companyName": "xoka ICT solutions",
+      "location": "Addis Ababa",
+      "phoneNumber": "0918217162",
+      "companyTrademark": "PLC",
+      "id": 2
+    },
+    {
+      "companyName": "Mina ICT Solution",
+      "location": "Afar",
+      "phoneNumber": "0934364782",
+      "companyTrademark": "PLC",
+      "id": 3
+    },
+    {
+      "companyName": "Halo Cash",
+      "location": "Addis Ababa",
+      "phoneNumber": "0934334344",
+      "companyTrademark": "PLC",
+      "id": 4
+    },
+    {
+      "companyName": "Blur ",
+      "location": "",
+      "phoneNumber": "",
+      "companyTrademark": "TLC",
+      "id": 5
+    },
+    {
+      "companyName": "Baranka ",
+      "location": "Baher Dar",
+      "phoneNumber": "07537218163",
+      "companyTrademark": "TLC",
+      "id": 6
+    },
+    {
+      "companyName": "Lacoste",
+      "location": "Semera",
+      "phoneNumber": "09453829473",
+      "companyTrademark": "PLC",
+      "id": 7
+    },
+    {
+      "companyName": "Bako Melta Industry",
+      "location": "Addis Ababa",
+      "phoneNumber": "09563628453",
+      "companyTrademark": "TLC",
+      "id": 8
+    },
+    {
+      "companyName": "Blur ",
+      "location": "Addis Ababa",
+      "phoneNumber": "0933442563",
+      "companyTrademark": "TLC",
+      "id": 9
+    },
+    {
+      "companyName": "aa",
+      "location": "aa",
+      "phoneNumber": "aa",
+      "companyTrademark": "aa",
+      "id": 10
+    }
+  ]
+}
