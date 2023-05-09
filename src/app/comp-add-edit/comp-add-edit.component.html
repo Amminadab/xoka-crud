@@ -1,0 +1,53 @@
+<div mat-dialog-title>Company Form</div>
+<form [formGroup]="compForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Company Name</mat-label>
+        <input
+          matInput
+          type="text"
+          placeholder="Ex. Xoka ICT Solutions"
+          formControlName="companyName"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Location</mat-label>
+        <input
+          matInput
+          type="text"
+          placeholder="Ex. Addis Ababa"
+          formControlName="location"
+        />
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Phone Number</mat-label>
+        <input
+          matInput
+          type="text"
+          placeholder="Ex. 09XXXXXXXX"
+          formControlName="phoneNumber"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Company Trademark</mat-label>
+        <input
+          matInput
+          type="text"
+          placeholder="Ex. PLC"
+          formControlName="companyTrademark"
+        />
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">
+      Cancel
+    </button>
+    <button mat-raised-button color="primary" type="submit">
+      {{ data ? "Update" : "Add" }}
+    </button>
+  </div>
+</form>
