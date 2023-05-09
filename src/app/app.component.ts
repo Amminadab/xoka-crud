@@ -52,6 +52,13 @@ export class AppComponent implements OnInit {
     });
   }
   openEditCompForm(data: any) {
-    this._dialog.open(CompAddEditComponent, { data });
+    const dialogRef = this._dialog.open(CompAddEditComponent, { data });
+    dialogRef.afterClosed().subscribe({
+      next: (val) => {
+        if (val) {
+          this.getCompanyList();
+        }
+      },
+    });
   }
 }

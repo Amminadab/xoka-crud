@@ -31,15 +31,29 @@ export class CompAddEditComponent implements OnInit {
 
   onFormSubmit() {
     if (this.compForm.valid) {
-      this._compService.addCompany(this.compForm.value).subscribe({
-        next: (val: any) => {
-          alert('Company Added successfully');
-          this._dialogRef.close(true);
-        },
-        error: (error: any) => {
-          console.error(error);
-        },
-      });
+      if (this.data) {
+        this._compService
+          .updateCompany(this.data.id, this.compForm.value)
+          .subscribe({
+            next: (val: any) => {
+              alert('Company Updated successfully');
+              this._dialogRef.close(true);
+            },
+            error: (error: any) => {
+              console.error(error);
+            },
+          });
+      } else {
+        this._compService.addCompany(this.compForm.value).subscribe({
+          next: (val: any) => {
+            alert('Company Added successfully');
+            this._dialogRef.close(true);
+          },
+          error: (error: any) => {
+            console.error(error);
+          },
+        });
+      }
     }
   }
 }

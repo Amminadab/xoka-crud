@@ -14,6 +14,12 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoute: Routes = [
+  { path: '', component: AppComponent },
+  { path: 'department/:id', component: AppComponent },
+];
 
 @NgModule({
   declarations: [AppComponent, CompAddEditComponent],
@@ -30,6 +36,7 @@ import { MatCardModule } from '@angular/material/card';
     ReactiveFormsModule,
     HttpClientModule,
     MatCardModule,
+    RouterModule.forRoot(appRoute),
   ],
   providers: [],
   bootstrap: [AppComponent],

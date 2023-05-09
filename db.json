@@ -25,7 +25,7 @@
       "id": 1
     },
     {
-      "companyName": "xoka ICT solutions",
+      "companyName": "Xoka ICT solutions",
       "location": "Addis Ababa",
       "phoneNumber": "0918217162",
       "companyTrademark": "PLC",
@@ -46,9 +46,9 @@
       "id": 4
     },
     {
-      "companyName": "Blur ",
-      "location": "",
-      "phoneNumber": "",
+      "companyName": "Blur tera cc",
+      "location": "Addis Ababa",
+      "phoneNumber": "093513432",
       "companyTrademark": "TLC",
       "id": 5
     },
@@ -74,7 +74,7 @@
       "id": 8
     },
     {
-      "companyName": "Blur ",
+      "companyName": "Katanga Trading",
       "location": "Addis Ababa",
       "phoneNumber": "0933442563",
       "companyTrademark": "TLC",
@@ -86,6 +86,13 @@
       "phoneNumber": "aa",
       "companyTrademark": "aa",
       "id": 10
+    },
+    {
+      "companyName": "aabb",
+      "location": "aa",
+      "phoneNumber": "aa",
+      "companyTrademark": "aa",
+      "id": 11
     }
   ]
 }
