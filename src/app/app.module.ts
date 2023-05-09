@@ -15,14 +15,22 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule, Routes } from '@angular/router';
+import { DepartmentComponent } from './department/department.component';
+import { NewCompaniesComponent } from './new-companies/new-companies.component';
+// import { CompaniesComponent } from './companies/companies.component';
 
 const appRoute: Routes = [
-  { path: '', component: AppComponent },
-  { path: 'department/:id', component: AppComponent },
+  { path: '', component: NewCompaniesComponent },
+  { path: 'department/:id', component: DepartmentComponent },
 ];
 
 @NgModule({
-  declarations: [AppComponent, CompAddEditComponent],
+  declarations: [
+    AppComponent,
+    CompAddEditComponent,
+    DepartmentComponent,
+    NewCompaniesComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

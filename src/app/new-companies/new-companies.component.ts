@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { CompAddEditComponent } from './comp-add-edit/comp-add-edit.component';
-import { CompanyService } from './services/company.service';
 import { Router } from '@angular/router';
+import { CompanyService } from '../services/company.service';
+import { MatDialog } from '@angular/material/dialog';
+import { CompAddEditComponent } from '../comp-add-edit/comp-add-edit.component';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-new-companies',
+  templateUrl: './new-companies.component.html',
+  styleUrls: ['./new-companies.component.scss'],
 })
-export class AppComponent implements OnInit {
-  title = 'human-resource';
-
+export class NewCompaniesComponent implements OnInit {
   displayedData: string[] = [
     'id',
     'companyName',
