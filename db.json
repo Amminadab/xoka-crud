@@ -110,17 +110,14 @@
     },
     {
       "department": "programming",
-      "companyId": null,
       "id": 2
     },
     {
       "department": "Light",
-      "companyId": null,
       "id": 3
     },
     {
       "department": "axy",
-      "companyId": null,
       "id": 4
     }
   ],
