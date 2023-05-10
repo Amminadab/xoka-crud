@@ -64,16 +64,13 @@ export class DepartmentComponent implements OnInit {
   //fetching the what company is
   ngOnInit(): void {
     this.companyId = this.activatedRoute.snapshot.paramMap.get('id');
-    // console.log(this.companyId);
-    // this.router.routeReuseStrategy.shouldReuseRoute = () => true;
+
     this._http.get('http://localhost:3000/companies').subscribe({
       next: (res: any) => {
         this.theHoleArray = res;
         this.company = this.theHoleArray.find(
           (x: any) => x.id == this.companyId
         );
-        // console.log(this.theHoleArray);
-        // this.getCompanyList();
       },
       error: console.log,
     });
