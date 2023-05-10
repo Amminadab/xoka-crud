@@ -10,8 +10,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'human-resource';
-
   displayedData: string[] = [
     'id',
     'companyName',
